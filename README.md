@@ -6,6 +6,7 @@ The idea of this demo is to show a typical command line workflow using open sour
 
 * AWS credentials
 * [TFE user token](https://www.terraform.io/docs/enterprise/users-teams-organizations/users.html#api-tokens)
+* [TFH helper](https://github.com/hashicorp-community/tf-helper)
 
 # Pre-demo
 
