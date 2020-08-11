@@ -1,13 +1,20 @@
+terraform {
+  required_version = ">= 0.12"
+}
+
 provider "aws" {
-  region = "us-east-1"
+  version = "~> 2.7"
+  region  = "us-east-1"
 }
 
 resource "aws_instance" "web" {
-  count         = 1
-  ami           = "ami-2e1ef954"
+  count         = var.size
+  ami           = var.ami-id
   instance_type = "t2.micro"
 
   tags = {
-    label = "test"
+    Name  = "Demo"
+    ttl   = "10d"
+    owner = "ranjit@hashicorp.com"
   }
 }
