@@ -1,8 +1,11 @@
+# Using a single workspace:
 terraform {
   backend "remote" {
-    organization = "ranjit-org"
+    hostname = "app.terraform.io"
+    organization = "brandonfoster"
+
     workspaces {
-     name = "BU_12345"
+      name = "my-app-prod"
     }
   }
 }

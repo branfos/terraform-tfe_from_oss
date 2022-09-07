@@ -3,7 +3,7 @@ terraform {
 }
 
 provider "aws" {
-  version = "~> 2.7"
+  version = "> 2.7"
   region  = "us-east-1"
 }
 
@@ -15,6 +15,6 @@ resource "aws_instance" "web" {
   tags = {
     Name  = "Demo"
     ttl   = "10d"
-    owner = "ranjit@hashicorp.com"
+    owner = "brandon.foster@hashicorp.com"
   }
 }
