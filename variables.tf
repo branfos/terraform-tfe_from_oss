@@ -5,5 +5,5 @@ variable "size" {
 
 variable "ami_id" {
   description = "ID of the AWS image to use."
-  default     = "ami-2e1ef954"
+  default     = "ami-0da7236b7a69cf265"
 }
