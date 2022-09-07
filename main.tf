@@ -12,7 +12,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name  = "Demo"
+    Name  = "Demo2"
     ttl   = "10d"
     owner = "brandon.foster@hashicorp.com"
   }
